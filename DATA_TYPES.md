@@ -67,4 +67,3 @@ b = int(3.9)   # 3
 # string to int
 c = int("42")  # 42
 ```
----Would you like me to make that version?
