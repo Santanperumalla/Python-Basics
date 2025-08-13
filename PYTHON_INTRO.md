@@ -1,10 +1,10 @@
-# 🐍 Python Programming Language
+# Python Programming Language
 
 Python is a **high-level, interpreted, and versatile programming language** known for its **simple syntax** and **powerful features**. It is widely used in web development, data science, automation, artificial intelligence, game development, and more.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Easy to Learn & Read** – Syntax similar to English.
 * **Cross-Platform** – Runs on Windows, macOS, Linux, and more.
@@ -15,7 +15,7 @@ Python is a **high-level, interpreted, and versatile programming language** know
 
 ---
 
-## 🖥️ First Python Program
+## First Python Program
 
 ```python
 # Hello World in Python
@@ -24,7 +24,7 @@ print("Hello, World!")
 
 ---
 
-## 📦 Popular Libraries & Frameworks
+## Popular Libraries & Frameworks
 
 * **Web Development** – Django, Flask, FastAPI
 * **Data Science & AI** – NumPy, Pandas, Matplotlib, TensorFlow, PyTorch
@@ -33,7 +33,7 @@ print("Hello, World!")
 
 ---
 
-## 📜 Example: Simple Calculator
+## Example: Simple Calculator
 
 ```python
 # Simple addition in Python
