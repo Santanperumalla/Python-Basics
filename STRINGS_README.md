@@ -1,4 +1,4 @@
-## 📜 Strings in Python
+## Strings in Python:
 
 In Python, a **string** is a sequence of characters enclosed in single quotes (`'`), double quotes (`"`) or triple quotes (`'''` / `"""`).
 Strings are **immutable**, meaning their contents cannot be changed after creation.
@@ -16,7 +16,7 @@ multiline string."""
 
 ---
 
-## 🔧 Common String Methods
+## Common String Methods:
 
 Python provides many built-in methods to work with strings:
 
