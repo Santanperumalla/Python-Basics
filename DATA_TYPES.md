@@ -1,0 +1,73 @@
+## 📌 Python Data Types
+
+In Python, **data types** define the kind of value a variable can store. Python is **dynamically typed**, meaning you don’t need to explicitly declare the data type—it is determined at runtime.
+
+### 🔹 Basic Built-in Data Types
+
+| Type         | Description                                 | Example           |
+| ------------ | ------------------------------------------- | ----------------- |
+| **int**      | Integer numbers (positive, negative, zero)  | `x = 42`          |
+| **float**    | Decimal numbers (floating-point)            | `pi = 3.14`       |
+| **complex**  | Complex numbers with real & imaginary parts | `z = 2 + 3j`      |
+| **str**      | Text data (Unicode string)                  | `name = "Python"` |
+| **bool**     | Boolean values (`True` or `False`)          | `is_valid = True` |
+| **NoneType** | Represents the absence of a value           | `x = None`        |
+
+---
+
+### 🔹 Sequence Types
+
+| Type      | Description                               | Example                                  |
+| --------- | ----------------------------------------- | ---------------------------------------- |
+| **list**  | Ordered, mutable collection               | `fruits = ["apple", "banana", "cherry"]` |
+| **tuple** | Ordered, immutable collection             | `coords = (10, 20)`                      |
+| **range** | Sequence of numbers (often used in loops) | `range(1, 5)`                            |
+
+---
+
+### 🔹 Set Types
+
+| Type          | Description                                      | Example                       |
+| ------------- | ------------------------------------------------ | ----------------------------- |
+| **set**       | Unordered, mutable collection with no duplicates | `nums = {1, 2, 3}`            |
+| **frozenset** | Immutable version of a set                       | `fset = frozenset([1, 2, 3])` |
+
+---
+
+### 🔹 Mapping Type
+
+| Type     | Description     | Example                               |
+| -------- | --------------- | ------------------------------------- |
+| **dict** | Key-value pairs | `user = {"name": "Alice", "age": 25}` |
+
+---
+
+### 🔹 Type Checking
+
+You can check the type of a variable using:
+
+```python
+x = 10
+print(type(x))  # <class 'int'>
+```
+
+---
+
+### 🔹 Type Casting
+
+Convert between types using built-in functions:
+
+```python
+# int to float
+a = float(5)   # 5.0
+
+# float to int
+b = int(3.9)   # 3
+
+# string to int
+c = int("42")  # 42
+```
+
+---
+
+Would you like me to make that version?
