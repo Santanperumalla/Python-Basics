@@ -1,8 +1,8 @@
-## 📌 Python Data Types
+## Python Data Types
 
 In Python, **data types** define the kind of value a variable can store. Python is **dynamically typed**, meaning you don’t need to explicitly declare the data type—it is determined at runtime.
 
-### 🔹 Basic Built-in Data Types
+### Basic Built-in Data Types:
 
 | Type         | Description                                 | Example           |
 | ------------ | ------------------------------------------- | ----------------- |
@@ -15,7 +15,7 @@ In Python, **data types** define the kind of value a variable can store. Python 
 
 ---
 
-### 🔹 Sequence Types
+### Sequence Types:
 
 | Type      | Description                               | Example                                  |
 | --------- | ----------------------------------------- | ---------------------------------------- |
@@ -25,7 +25,7 @@ In Python, **data types** define the kind of value a variable can store. Python 
 
 ---
 
-### 🔹 Set Types
+### Set Types:
 
 | Type          | Description                                      | Example                       |
 | ------------- | ------------------------------------------------ | ----------------------------- |
@@ -34,7 +34,7 @@ In Python, **data types** define the kind of value a variable can store. Python 
 
 ---
 
-### 🔹 Mapping Type
+### Mapping Type:
 
 | Type     | Description     | Example                               |
 | -------- | --------------- | ------------------------------------- |
@@ -42,7 +42,7 @@ In Python, **data types** define the kind of value a variable can store. Python 
 
 ---
 
-### 🔹 Type Checking
+### Type Checking:
 
 You can check the type of a variable using:
 
@@ -53,7 +53,7 @@ print(type(x))  # <class 'int'>
 
 ---
 
-### 🔹 Type Casting
+### Type Casting:
 
 Convert between types using built-in functions:
 
@@ -67,7 +67,4 @@ b = int(3.9)   # 3
 # string to int
 c = int("42")  # 42
 ```
-
----
-
-Would you like me to make that version?
+---Would you like me to make that version?
