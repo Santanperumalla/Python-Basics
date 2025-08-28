@@ -1,0 +1,248 @@
+# What is a SET?
+
+A **set** in Python is a collection of **unique and unordered elements**.
+
+* Unique → No duplicates allowed
+* Unordered → No indexing, slicing, or order guarantee
+
+It is defined using `{ }` or the `set()` function.
+
+---
+
+## Creating a Set
+
+```python
+# Empty set
+my_set = set()
+
+# With elements
+nums = {1, 2, 3, 4}
+print(nums)  # {1, 2, 3, 4}
+
+# Duplicate values are removed
+dup = {1, 2, 2, 3}
+print(dup)  # {1, 2, 3}
+```
+
+---
+
+### Key Features:
+
+* No duplicates
+* Unordered (you can’t access by index)
+* Mutable (you can add/remove items)
+* Can only store **immutable** items (numbers, strings, tuples—but not lists or dicts)
+
+---
+
+### Common Set Operations
+
+```python
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+# Add an element
+A.add(7)       # {1, 2, 3, 4, 7}
+
+# Remove an element
+A.remove(2)    # {1, 3, 4, 7}
+
+# Union (combine sets)
+print(A | B)   # {1, 3, 4, 5, 6, 7}
+
+# Intersection (common elements)
+print(A & B)   # {3, 4}
+
+# Difference
+print(A - B)   # {1, 7}
+
+# Symmetric difference (elements in A or B but not both)
+print(A ^ B)   # {1, 5, 6, 7}
+```
+
+---
+
+### When to Use Sets?
+
+* Removing duplicates from a collection
+* Checking membership quickly (`in` is faster in sets)
+* Performing mathematical operations like union, intersection, etc.
+
+---
+
+## Simple Definition of SET:
+A **set** is like a bag of unique, unordered items in Python, very useful for eliminating duplicates and performing math-like operations on collections.
+
+---
+## BUILT-IN METHODS OF SETS:
+- .add()
+- .update()
+- .pop()
+- .clear()
+- .remove()
+- .discard()
+- sorted()
+
+---
+
+| Method / Function       | Description                                                           | Example                           | Special Notes                          |
+| ----------------------- | --------------------------------------------------------------------- | --------------------------------- | -------------------------------------- |
+| **`.add(x)`**           | Adds a single element `x` to the set                                  | `{1,2}.add(3) → {1,2,3}`          | Adds only one item at a time           |
+| **`.update(iterable)`** | Adds multiple elements from another iterable (list, set, tuple, etc.) | `{1,2}.update([3,4]) → {1,2,3,4}` | Can add many items at once             |
+| **`.pop()`**            | Removes and returns a **random** element                              | `{1,2,3}.pop() → 1 (or 2 or 3)`   | Raises **KeyError** if set is empty    |
+| **`.clear()`**          | Removes all elements (empties the set)                                | `{1,2,3}.clear() → set()`         | Leaves an empty set                    |
+| **`.remove(x)`**        | Removes element `x`                                                   | `{1,2,3}.remove(2) → {1,3}`       | Raises **KeyError** if `x` not found   |
+| **`.discard(x)`**       | Removes element `x` if present                                        | `{1,2,3}.discard(2) → {1,3}`      | No error if `x` not found              |
+| **`sorted(set)`**       | Returns a sorted list of set elements                                 | `sorted({3,1,2}) → [1,2,3]`       | Always returns a **list**, not a set   |
+
+---
+
+### Let's see these each *BUILT-IN METHODS OF SETS* with examples:
+
+
+### 1. **`.add()`**
+
+- Adds a **single element** to the set.
+
+```python
+s = {1, 2, 3}
+s.add(4)
+print(s)  # {1, 2, 3, 4}
+```
+
+---
+
+### 2. **`.update()`**
+
+- Adds **multiple elements** (from list, tuple, set, etc.) to the set.
+
+```python
+s = {1, 2, 3}
+s.update([4, 5], {6, 7})
+print(s)  # {1, 2, 3, 4, 5, 6, 7}
+```
+
+---
+
+### 3. **`.pop()`**
+
+- Removes and returns a **random element** (since sets are unordered).
+
+```python
+s = {1, 2, 3}
+print(s.pop())  # Random element (e.g., 1)
+print(s)        # Remaining elements
+```
+
+---
+
+### 4. **`.clear()`**
+
+- Removes **all elements** from the set (makes it empty).
+
+```python
+s = {1, 2, 3}
+s.clear()
+print(s)  # set()
+```
+
+---
+
+### 5. **`.remove()`**
+
+- Removes a specific element.
+* Raises **KeyError** if the element is not found.
+
+```python
+s = {1, 2, 3}
+s.remove(2)
+print(s)  # {1, 3}
+# s.remove(5)  → KeyError (if 5 not in set)
+```
+
+---
+
+### 6. **`.discard()`**
+
+- Removes a specific element.
+* Does **not** raise an error if the element is missing.
+
+```python
+s = {1, 2, 3}
+s.discard(2)
+print(s)  # {1, 3}
+s.discard(5)  # No error
+```
+
+---
+
+### 7. **`sorted()`**
+
+(Not a set method, but a **built-in function**.)
+Returns a **sorted list** of the set’s elements.
+
+```python
+s = {3, 1, 4, 2}
+print(sorted(s))        # [1, 2, 3, 4]
+print(sorted(s, reverse=True))  # [4, 3, 2, 1]
+```
+
+---
+
+**Summary of each method in simple:**
+
+* `.add()` → add 1 element
+* `.update()` → add multiple elements
+* `.pop()` → remove & return random element
+* `.clear()` → empty the set
+* `.remove()` → remove specific element (error if missing)
+* `.discard()` → remove specific element (no error if missing)
+* `sorted()` → returns a sorted list of set elements
+
+---
+
+***DIFFERENCE BETWEEN `remove()`, `discard()` & `pop()` WITH COMPARISION TABLE:***
+
+---
+
+| Method            | Removes Which Element?                          | Return Value        | Error if Element Not Found?      | Example                                        |
+| ----------------- | ----------------------------------------------- | ------------------- | ---------------------------------| -----------------------------------------------|
+| **`.remove(x)`**  | The specified element `x`                       | None                | Yes (`KeyError`)                 | `{1,2,3}.remove(2) → {1,3}`                    |
+| **`.discard(x)`** | The specified element `x`                       | None                | No (safe if missing)             | `{1,2,3}.discard(5) → {1,2,3}`                 |
+| **`.pop()`**      | A **random element** (since sets are unordered) | The removed element | Yes (`KeyError` if set is empty) | `{1,2,3}.pop() → returns 1, set becomes {2,3}` |
+
+---
+
+**Quick Summary:**
+
+* Use **`remove()`** when you’re sure the element exists.
+* Use **`discard()`** when you’re not sure (safe way).
+* Use **`pop()`** when you just want to grab and remove something random.
+
+---
+
+## NOTE:
+- **mutable   = unhashable**
+- **immutable = hashable**
+
+---
+
+## HASHABLE & UNHASHABLE:
+### HASHABLE:
+1. It returns a fixed hash value
+2. It is immutable - content cant change
+3. can be used as a key in a dictionary or an element in a set
+- Eg: int, float, str, tuple->(only if it contains only hashable elements)
+
+### UNHASHABLE:
+1. It doesnt have fixed hash value
+2. It is mutable - content can be changed
+3. cant be used as a dictionary key or set element
+- Eg: list, dict, set
+
+---
+
+## Fixed hash value
+For hashable objects:
+- The hash value is calculated based on the object's immutable content (or identity).
+- If the object doesn’t change (and it can’t if it’s immutable), the hash stays constant throughout the program.
