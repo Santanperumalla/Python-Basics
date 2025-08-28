@@ -246,3 +246,5 @@ print(sorted(s, reverse=True))  # [4, 3, 2, 1]
 For hashable objects:
 - The hash value is calculated based on the object's immutable content (or identity).
 - If the object doesn’t change (and it can’t if it’s immutable), the hash stays constant throughout the program.
+
+---
